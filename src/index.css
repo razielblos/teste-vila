@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sabor da Vila Design System - Lancheria Theme */
+
+@layer base {
+  :root {
+    /* Sabor da Vila Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 216 19% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 216 19% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 216 19% 16%;
+
+    /* Brand Primary - Burgundy */
+    --primary: 340 69% 30%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 340 69% 25%;
+
+    /* Brand Secondary - Navy Blue */
+    --secondary: 221 83% 26%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-hover: 221 83% 21%;
+
+    /* Golden Accent for CTAs */
+    --accent: 45 92% 52%;
+    --accent-foreground: 216 19% 16%;
+    --accent-hover: 45 92% 47%;
+
+    /* Neutral Tones */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 340 69% 30%;
+
+    --radius: 0.75rem;
+
+    /* Custom Design Tokens */
+    --warm-gradient: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --food-gradient: linear-gradient(45deg, hsl(var(--accent)), hsl(45 100% 60%));
+    --hero-gradient: linear-gradient(135deg, hsl(var(--primary) / 0.95), hsl(var(--secondary) / 0.95));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(var(--primary) / 0.1);
+    --shadow-card: 0 8px 32px -4px hsl(var(--primary) / 0.15);
+    --shadow-floating: 0 12px 48px -8px hsl(var(--primary) / 0.2);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  /* Hero Button Variants */
+  .btn-hero {
+    @apply bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
+  }
+  
+  .btn-hero-outline {
+    @apply border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105;
+  }
+  
+  /* Menu Card Styles */
+  .menu-card {
+    @apply bg-card rounded-2xl p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-floating)] transition-all duration-300 hover:scale-[1.02] border border-border/50;
+  }
+  
+  /* Gradient Backgrounds */
+  .gradient-warm {
+    background: var(--warm-gradient);
+  }
+  
+  .gradient-food {
+    background: var(--food-gradient);
+  }
+  
+  .gradient-hero {
+    background: var(--hero-gradient);
+  }
+  
+  /* Smooth Scroll */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+  
+  /* WhatsApp Button */
+  .btn-whatsapp {
+    @apply bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+  
+  /* Chat Interface */
+  .chat-bubble-user {
+    @apply bg-primary text-primary-foreground rounded-2xl rounded-br-md px-4 py-3 ml-auto max-w-[80%];
+  }
+  
+  .chat-bubble-bot {
+    @apply bg-muted text-muted-foreground rounded-2xl rounded-bl-md px-4 py-3 mr-auto max-w-[80%];
+  }
+  
+  /* Price Tags */
+  .price-tag {
+    @apply text-primary font-bold text-xl;
+  }
+  
+  /* Badge Styles */
+  .badge-popular {
+    @apply bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold shadow-md;
+  }
+  
+  .badge-new {
+    @apply bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold shadow-md;
+  }
+  
+  .badge-promo {
+    @apply bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-md;
+  }
+  
+  /* Enhanced animations */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
