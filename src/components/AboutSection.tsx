@@ -8,7 +8,7 @@ const AboutSection = () => {
   }, {
     icon: Clock,
     title: "Desde 1995",
-    description: "Mais de 25 anos servindo a comunidade com qualidade e dedicação."
+    description: "Há 30 anos servindo a comunidade com qualidade e dedicação."
   }, {
     icon: Users,
     title: "Equipe Dedicada",
