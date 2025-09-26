@@ -1,0 +1,44 @@
+# Arquivo gerado pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diretório de dependências
+# A pasta mais importante para ignorar em projetos Node.js
+node_modules/
+
+# Arquivos de ambiente
+# Contêm chaves de API, senhas e outras informações sensíveis
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Pasta de build/distribuição
+# Arquivos gerados pelo processo de compilação
+dist
+build
+.next/
+.nuxt/
+.vercel/
+
+# Caches de pacotes
+.npm
+.yarn/cache
+.yarn/plug-n-play
+.yarn/unplugged
+.pnp.*
+
+# Arquivos de configuração de editores
+.vscode/
+.idea/
