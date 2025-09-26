@@ -7,26 +7,14 @@ const ContactSection = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       label: 'Endereço',
-      value: 'Rua das Flores, 123 - Centro',
+      value: 'Tv. São José, 455 - Navegantes, 90240-200',
       subtitle: 'Porto Alegre - RS'
     },
     {
       icon: <Phone className="w-6 h-6" />,
       label: 'WhatsApp',
-      value: '(51) 99999-9999',
-      action: () => window.open('https://wa.me/5551999999999?text=Olá! Gostaria de fazer um pedido', '_blank')
-    },
-    {
-      icon: <Mail className="w-6 h-6" />,
-      label: 'E-mail',
-      value: 'contato@sabordavila.com.br',
-      action: () => window.open('mailto:contato@sabordavila.com.br', '_blank')
-    },
-    {
-      icon: <Instagram className="w-6 h-6" />,
-      label: 'Instagram',
-      value: '@sabordavila_oficial',
-      action: () => window.open('https://instagram.com/sabordavila_oficial', '_blank')
+      value: '(51) 999810-6560',
+      action: () => window.open('https://wa.me/5551998106560?text=Olá! Gostaria de fazer um pedido', '_blank')
     },
     {
       icon: <Clock className="w-6 h-6" />,
@@ -97,7 +85,7 @@ const ContactSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <Button
                 className="btn-whatsapp flex-1"
-                onClick={() => window.open('https://wa.me/5551999999999?text=Olá! Gostaria de fazer um pedido', '_blank')}
+                onClick={() => window.open('https://wa.me/5551998106560?text=Olá! Gostaria de fazer um pedido', '_blank')}
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Fazer Pedido pelo WhatsApp
@@ -105,7 +93,7 @@ const ContactSection = () => {
               <Button
                 variant="outline"
                 className="flex-1 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                onClick={() => window.open('https://instagram.com/sabordavila_oficial', '_blank')}
+                onClick={() => window.open('LINK AQUI', '_blank')}
               >
                 <Instagram className="w-5 h-5 mr-2" />
                 Seguir no Instagram
@@ -126,15 +114,15 @@ const ContactSection = () => {
                   <div className="text-center">
                     <MapPin className="w-16 h-16 mx-auto mb-4 opacity-80" />
                     <h4 className="text-xl font-semibold mb-2">
-                      Rua das Flores, 123
+                      Tv. São José, 455
                     </h4>
                     <p className="opacity-90">
-                      Centro - Porto Alegre, RS
+                      Navegantes - Porto Alegre, RS
                     </p>
                     <Button
                       variant="outline"
                       className="mt-4 border-white text-white hover:bg-white hover:text-primary"
-                      onClick={() => window.open('https://maps.google.com/?q=Rua das Flores, 123, Porto Alegre, RS', '_blank')}
+                      onClick={() => window.open('https://maps.app.goo.gl/DYPWoDm1ZFQDaAc59', '_blank')}
                     >
                       Abrir no Google Maps
                     </Button>
