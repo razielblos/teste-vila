@@ -104,7 +104,7 @@ const MenuSection = () => {
                   {item.description}
                 </p>
                 
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center mt-auto">
                   <span className="price-tag">
                     {item.price}
                   </span>
@@ -112,7 +112,7 @@ const MenuSection = () => {
                     className="btn-whatsapp"
                     onClick={() => handleWhatsAppOrder(item.name)}
                   >
-                    Pedir pelo WhatsApp
+                    Peça aqui
                   </Button>
                 </div>
               </CardContent>

@@ -83,12 +83,7 @@ const FAQSection = () => {
             >
               Falar no WhatsApp
             </button>
-            <button
-              onClick={() => window.location.href = 'mailto:razielblos@gmail.com'}
-              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
-            >
-              Enviar E-mail
-            </button>
+            
           </div>
         </div>
       </div>
