@@ -9,7 +9,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
-import Chatbot from '@/components/Chatbot';
+
 
 const Index = () => {
   useEffect(() => {
@@ -43,7 +43,6 @@ const Index = () => {
       <FAQSection />
       <ContactSection />
       <Footer />
-      <Chatbot />
     </main>
   );
 };
