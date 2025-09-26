@@ -74,7 +74,7 @@ const Header = () => {
         {/* WhatsApp CTA - Desktop */}
         <Button 
           className="hidden md:flex btn-whatsapp"
-          onClick={() => window.open('https://wa.me/5551999999999?text=Olá! Gostaria de fazer um pedido', '_blank')}
+          onClick={() => window.open('https://wa.me/5551998106560?text=Olá! Gostaria de fazer um pedido', '_blank')}
         >
           WhatsApp
         </Button>
@@ -132,7 +132,7 @@ const Header = () => {
             </button>
             <Button 
               className="btn-whatsapp justify-start"
-              onClick={() => window.open('https://wa.me/5551999999999?text=Olá! Gostaria de fazer um pedido', '_blank')}
+              onClick={() => window.open('https://wa.me/5551998106560?text=Olá! Gostaria de fazer um pedido', '_blank')}
             >
               WhatsApp
             </Button>
