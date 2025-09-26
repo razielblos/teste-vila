@@ -18,7 +18,7 @@ const AboutSection = () => {
     title: "Ingredientes Premium",
     description: "Selecionamos os melhores ingredientes para garantir sabor único."
   }];
-  return <section id="sobre" className="section-padding bg-background p-[10px] mt-20">
+  return <section id="sobre" className="section-padding bg-background p-[50px]">
       <div className="container mx-auto mb-[10px]">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-display font-bold text-primary mb-6 py-[32px] px-[12px] my-[3px] md:text-6xl">
