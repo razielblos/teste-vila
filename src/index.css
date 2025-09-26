@@ -113,15 +113,6 @@
     @apply bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl;
   }
   
-  /* Chat Interface */
-  .chat-bubble-user {
-    @apply bg-primary text-primary-foreground rounded-2xl rounded-br-md px-4 py-3 ml-auto max-w-[80%];
-  }
-  
-  .chat-bubble-bot {
-    @apply bg-muted text-muted-foreground rounded-2xl rounded-bl-md px-4 py-3 mr-auto max-w-[80%];
-  }
-  
   /* Price Tags */
   .price-tag {
     @apply text-primary font-bold text-xl;
