@@ -63,11 +63,11 @@ const menuItems: MenuItem[] = [
 const MenuSection = () => {
   const handleWhatsAppOrder = (itemName: string) => {
     const message = `Olá! Gostaria de pedir: ${itemName}`;
-    window.open(`https://wa.me/5551999999999?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/5551998106560?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
-    <section id="cardapio" className="section-padding bg-muted/30 p-[10px] mt-20">
+    <section id="cardapio" className="section-padding bg-muted/30 p-[50px]">
       <div className="container mx-auto mb-[10px]">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -93,16 +93,14 @@ const MenuSection = () => {
                   alt={item.name}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
-                  {item.price}
-                </div>
+                {/* REMOVIDO: O div com o preço sobre a imagem foi removido */}
               </div>
               
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-primary mb-3">
                   {item.name}
                 </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed min-h-[4.5rem]">
                   {item.description}
                 </p>
                 

@@ -39,11 +39,11 @@ const PromotionsSection = () => {
 
   const handleWhatsAppOrder = (promoTitle: string) => {
     const message = `Olá! Gostaria de saber mais sobre a promoção: ${promoTitle}`;
-    window.open(`https://wa.me/5551999999999?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/5551998106560?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
-    <section id="promocoes" className="section-padding bg-gradient-to-br from-accent/5 to-primary/5 p-[10px] mt-20">
+    <section id="promocoes" className="section-padding bg-gradient-to-br from-accent/5 to-primary/5 p-[50px]">
       <div className="container mx-auto mb-[10px]">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-accent text-accent-foreground px-4 py-2 text-sm font-medium">
@@ -91,7 +91,7 @@ const PromotionsSection = () => {
                   </span>
                 </div>
 
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed min-h-[4.5rem]">
                   {promo.description}
                 </p>
 
@@ -125,7 +125,7 @@ const PromotionsSection = () => {
             variant="outline"
             size="lg"
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            onClick={() => window.open('https://wa.me/5551999999999?text=Olá! Gostaria de receber as promoções do Sabor da Vila', '_blank')}
+            onClick={() => window.open('https://wa.me/5551998106560?text=Olá! Gostaria de receber as promoções do Sabor da Vila', '_blank')}
           >
             Receber Promoções no WhatsApp
           </Button>

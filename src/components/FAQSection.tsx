@@ -78,13 +78,13 @@ const FAQSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-              onClick={() => window.open('https://wa.me/5551999999999?text=Olá! Tenho uma dúvida sobre o Sabor da Vila', '_blank')}
+              onClick={() => window.open('https://wa.me/5551998106560?text=Olá! Tenho uma dúvida sobre o Sabor da Vila', '_blank')}
               className="btn-whatsapp inline-flex items-center justify-center"
             >
               Falar no WhatsApp
             </button>
             <button
-              onClick={() => window.location.href = 'mailto:contato@sabordavila.com.br'}
+              onClick={() => window.location.href = 'mailto:razielblos@gmail.com'}
               className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Enviar E-mail

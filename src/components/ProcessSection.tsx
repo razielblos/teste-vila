@@ -34,7 +34,7 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section id="como-funciona" className="section-padding bg-muted/30 p-[10px] mt-20">
+    <section id="como-funciona" className="section-padding bg-background p-[50px]">
       <div className="container mx-auto mb-[10px]">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">

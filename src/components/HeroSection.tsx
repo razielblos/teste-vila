@@ -40,14 +40,14 @@ const HeroSection = () => {
             </div>
             <div className="hidden sm:block w-px h-8 bg-white/30"></div>
             <div className="text-center">
-              <div className="text-3xl font-bold">28 Anos</div>
+              <div className="text-3xl font-bold">30 Anos</div>
               <div className="text-sm">de Tradição</div>
             </div>
           </div>
           
           {/* Call to Actions */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button className="btn-hero text-lg px-10 py-6" onClick={() => window.open('https://wa.me/5551999999999?text=Olá! Gostaria de fazer um pedido', '_blank')}>
+            <Button className="btn-hero text-lg px-10 py-6" onClick={() => window.open('https://wa.me/5551998106560?text=Olá! Gostaria de fazer um pedido', '_blank')}>
               Reserve já pelo WhatsApp
             </Button>
             
